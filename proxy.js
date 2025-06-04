@@ -7,7 +7,7 @@ app.use(cors());
 
 app.get("/api/results", async (req, res) => {
   try {
-    const response = await fetch("https://api.tournament-live.com/v1/page/65fab9c06cb48c0015c373b5/tournament/67f80b631a96b90015d40158/results");
+    const response = await fetch("https://api.tournament-live.com/v1/page/65fab9c06cb48c0015c373b5/tournament/683fe8c4e7922a00156cf721/results");
     const data = await response.json();
     res.json(data);
   } catch (err) {
